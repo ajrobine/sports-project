@@ -11,24 +11,105 @@
 </head>
 <body>
 	
+<!--MASK AND MODALS-->
+
 	<div id="mask"></div>
 
 	<div class="modal" id="new_event">
 		<div class="close">x</div>
-		Game Type: <select>
-			<option value=""></option>
-			<option value="">Frisbee</option>
-			<option value="">Soccer</option>
-		</select>
+		Game Type: 
+			<select>
+				<option value=""></option>
+				<option value="">Frisbee</option>
+				<option value="">Soccer</option>
+			</select>
 			<br>
-		Time: <input id="time"/>
+		Time: 
+			<input id="time"/>
 			<br>
-		<div id="date_container">
-			Date: <input id="date">
-				<br>
-		</div>
+		<!--DATE-->
+			<div id="date_container">
+				Date: 
+				<input id="date"><br>
+			</div>
+		Address:
+			<input id="address" />
+			<br>
+		Players
+			<input id="players" />
+			<br>
+		Attitude:
+			<select>
+				<option value="">Casual</option>
+				<option value="">Competitive</option>
+			</select>
+			<br>
+		Notes:
+			<br>
+			<textarea></textarea>
+			<br>
 		<button>submit</button>
 	</div>
+
+	<div class="modal" id="find_event">
+		<div class="close">x</div>
+		<div class="findby_home">
+			Find an event by:
+				<br>
+				<button id="gtype_btn">game type</button>
+				<button id="players_btn">who's playing</button>
+				<button id="when_btn">date and time</button>
+				<br><br>
+		</div>
+		<div id="findby_gtype">
+			Choose a sport:
+				<select>
+					<option value=""></option>
+					<option value="">Frisbee</option>
+					<option value="">Soccer</option>
+				</select>
+				<button>find</button>
+		</div>
+		<div id="findby_players">
+			Friends playing games:
+				<ul>
+					<li><a href="">You don't have any friends</a></li>
+				</ul>
+		</div>
+		<div id="findby_when">
+			Upcoming games
+				<ul>
+					<li><a href="">No upcoming games</a></li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="modal" id="login">
+		<div class="close">x</div>
+		Username:
+			<input />
+			<br>
+		Password:
+			<input />
+			<br>
+		<!--Login Button-->	
+			<button>login</button>
+			<br>
+		<!--Forgot Password?-->
+			<p id="forgot_password">
+				Forgot your password?
+			</p>
+			<br>
+		<!--Retrieve Password-->
+			<div id="retrieve_password">
+				Your email:
+					<input />
+					<br>
+					<button>retrieve</button>
+			</div>
+	</div>
+
+<!--TOOLBAR-->
 
 	<div class="toolbar">
 		<div class="tc" id="tc_1"><div class="tc_text">Application Title</div></div>
