@@ -11,11 +11,16 @@ function launchModal(){
 		$("#tc_4").click(function(){
 			$("#login, #mask").show();
 		});
+	//Show "info" screen
+		$("#tc_5").click(function(){
+			$("#info, #mask").show();
+		});
 	//Hide modal and mask
 		$(".close, #mask").click(function(){
 			$(".modal, #mask").hide();
 		});
 };
+
 function createEvent(){
 	//Set time input's value to the current time
 		var d = new Date();
@@ -63,6 +68,7 @@ function createEvent(){
 			$("#date_container").show();
 		});
 };
+
 function findEvent(){
 	//Hide all findby menus
 		$("#findby_gtype, #findby_players, #findby_when").hide();
@@ -81,6 +87,7 @@ function findEvent(){
 			};
 		});
 };
+
 function logIn(){
 	//Display Password Retrieval Info
 		$("#retrieve_password").hide();
