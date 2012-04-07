@@ -10,8 +10,9 @@
 }
 
 .modal	{
-	width: 50%;
-	height: 50%;
+	width: 46%;
+	height: 46%;
+	padding: 2%;
 	background-color: #e1e1e8;
 	border: 2px solid black;
 	position: absolute;
@@ -23,9 +24,7 @@
 	display: none;
 }
 
-#close	{
-	position: absolute;
-	top: 5%;
-	right: 5%;
+.close	{
+	float: right;
 	cursor: pointer;
 }

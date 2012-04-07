@@ -12,14 +12,27 @@
 <body>
 	
 	<div id="mask"></div>
-	
-	<div class="modal">
-		<div id="close">close</div>
+
+	<div class="modal" id="new_event">
+		<div class="close">x</div>
+		Game Type: <select>
+			<option value=""></option>
+			<option value="">Frisbee</option>
+			<option value="">Soccer</option>
+		</select>
+			<br>
+		Time: <input id="time"/>
+			<br>
+		<div id="date_container">
+			Date: <input id="date">
+				<br>
+		</div>
+		<button>submit</button>
 	</div>
 
 	<div class="toolbar">
 		<div class="tc" id="tc_1"><div class="tc_text">Application Title</div></div>
-		<div class="tc" id="tc_2"><div class="tc_text">Start Game</div></div>
+		<div class="tc" id="tc_2"><div class="tc_text">Post New Event</div></div>
 		<div class="tc" id="tc_3"><div class="tc_text">Find Games</div></div>
 		<div class="tc" id="tc_4"><div class="tc_text">Log In</div></div>
 		<div class="tc" id="tc_5"><div class="tc_text">^</div></div>
