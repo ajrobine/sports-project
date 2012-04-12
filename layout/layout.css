@@ -1,0 +1,49 @@
+html, body	{
+	overflow: hidden;
+}
+
+/*SCREENS*/
+
+	.screen	{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0%;
+	}
+
+	#screen_primary		{top: 0%; 		background-color: #fff; }
+	#screen_secondary	{top: -100%;	background-color: #fff;}
+
+/*EVENT BLOCKS*/
+
+	.event	{
+		width: 8em;
+		height: 8em;
+		padding: 1em;
+		margin-bottom: 0.125em;
+		display: inline-block;
+	}
+
+	.event_container{
+		width: 10em;
+		margin-right: 0.125em;
+		display: inline-block;
+	}
+
+	.all_events	{
+		height: 490px;
+		width: 900%;
+		position: absolute;
+		top: 50%;
+		margin-top: -245px;
+	}
+
+	.red	{background-color: 			rgb(245, 100, 64);}
+	.green	{background-color: 			rgb(128, 208, 140);}
+	.blue	{background-color: 			rgb(29, 172, 214);}
+	.yellow	{background-color: 			rgb(255, 207, 72);}
+
+	.red:hover		{background-color: 	rgb(225, 80, 44);}
+	.green:hover	{background-color: 	rgb(108, 188, 120);}
+	.blue:hover		{background-color: 	rgb(19, 162, 204);}
+	.yellow:hover	{background-color: 	rgb(235, 187, 52);}
