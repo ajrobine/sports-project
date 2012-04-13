@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sports Project</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="styles/layout.css">
+
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/layout.js"></script>
+	</head>
+	<body>
+	<!--EVENT TILES-->
+		<div class="screen" id="screen_primary">
+			<div class="event_container">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero magna, pulvinar sit amet commodo nec, consectetur vitae elit. Proin iaculis purus at neque iaculis porttitor. Suspendisse quam ligula, porta ut condimentum non, consectetur a lectus. Aenean eu arcu quam. Curabitur nec justo lorem, id aliquet diam. Cras nunc diam, convallis id venenatis at, tristique ut dolor. Curabitur ac tincidunt dolor. Aliquam volutpat molestie ligula, quis rhoncus elit convallis sit amet.
+			</div>
+		</div>
+	<!--SECONDARY SCREEN (MENU, CREATE and POST EVENTS)-->
+		<div class="screen" id="screen_secondary">
+			<div id="subscreen_post">
+				<h3>start game</h3><br>
+				Game Type: 
+					<input id="input_gametype">
+					<br>
+				Time: 
+					<input id="input_time">
+					<br>
+				<!--DATE-->
+					<div id="date_container">
+						Date: 
+						<input id="date"><br>
+					</div>
+				Address:
+					<input id="input_address">
+					<br>
+				Players
+					<input id="input_players">
+					<br>
+				Attitude:
+					<input id="input_attitude">
+					<br>
+				Notes:
+					<br>
+					<textarea id="input_notes">
+					</textarea>
+					<br>
+				<button class="submit" id="submit_new_game">submit</button>
+			</div>
+			<div id="subscreen_find">
+				<h3>find game</h3><br>
+
+			</div>
+			<div id="subscreen_menu">
+				<h3>menu</h3><br>
+
+			</div>
+		</div>
+	<!--NAVIGATION-->
+		<div class="menu_bar_container">
+			<div class="menu_bar">
+				<h1>title.</h1>
+				<div id="menu_options">
+					<p id="post_event">post game</p>
+					<p id="find_event">find game</p>
+					<p id="menu">menu</p>
+				</div>
+				<p id="back">back</p>
+			</div>
+		</div>
+
+	</body>
+</html>

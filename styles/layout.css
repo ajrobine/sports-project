@@ -1,0 +1,86 @@
+/*GENERAL*/
+
+	html, body	{
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	h1, h2, h3, h4, h5, h6	{font-family: Franklin Gothic Medium;}
+
+/*NAVIGATION*/
+
+	.menu_bar_container	{
+		background-color: white;
+		height: 100%;
+		width: 10.2em;
+		position: absolute;
+		left: 0%;
+		top:0%;
+		z-index: 2;
+		border-right: 1px solid rgba(150, 150, 150, 0.75);
+		box-shadow: 0.5em 0px 6em rgba(150, 150, 150, 0.75);
+	}
+			
+	.menu_bar	{
+		height: 10em;
+		padding-left: 3em;
+		padding-right: 3em;
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		margin-top: -5em;
+		font-family: Arial;
+		font-size: 14px;
+	}
+
+	.menu_bar p:hover {
+		text-decoration: underline;
+		cursor: default;
+	}
+
+	#back 	{display: none;}
+
+/*SCREENS*/
+
+	.screen	{
+		height: 100%;
+		position: absolute;
+		top: 0;
+		text-align: center;
+		background-color: #eee;
+	}
+
+	#screen_primary		{width: 500%;	top: 0%;}
+	#screen_secondary	{width: 100%;	top: -100%;}
+
+	#subscreen_post, 
+	#subscreen_find, 
+	#subscreen_menu	{display: none;}
+
+	/*PRIMARY SCREEN*/
+
+		.event_container	{
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			margin-top: -0.5em;
+			background-color: #abc;
+			text-align: left;
+		}
+
+	/*POST SCREEN*/
+	/*FIND SCREEN*/
+	/*MENU SCREEN*/
+
+/*EVENT BLOCKS*/
+
+	.red	{background-color: 			rgb(245, 100, 64);}
+	.green	{background-color: 			rgb(128, 208, 140);}
+	.blue	{background-color: 			rgb(29, 172, 214);}
+	.yellow	{background-color: 			rgb(255, 207, 72);}
+
+	.red:hover		{background-color: 	rgb(225, 80, 44);}
+	.green:hover	{background-color: 	rgb(108, 188, 120);}
+	.blue:hover		{background-color: 	rgb(19, 162, 204);}
+	.yellow:hover	{background-color: 	rgb(235, 187, 52);}
