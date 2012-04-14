@@ -6,7 +6,15 @@
 		overflow: hidden;
 	}
 
-	h1, h2, h3, h4, h5, h6	{font-family: Franklin Gothic Medium;}
+	h1, h2, h3, h4, h5, h6	{font-family: arial;}
+
+	input, textarea {
+		height: 2em;
+		width: 15em;
+		margin: 0.25em;
+		font-size: 16pt;
+		padding-left: .5em;
+	}
 
 /*NAVIGATION*/
 
@@ -32,6 +40,7 @@
 		margin-top: -5em;
 		font-family: Arial;
 		font-size: 14px;
+		color: rgb(100, 100, 100);
 	}
 
 	.menu_bar p:hover {
@@ -57,6 +66,45 @@
 	#subscreen_post, 
 	#subscreen_find, 
 	#subscreen_menu	{display: none;}
+
+	.input_field_container	{
+		height: 7em;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		margin-top: -3.5em;
+	}
+
+	.input_field	{
+		height: 100%;
+		width: 16em;
+		position: absolute;
+		margin-left: -8em;
+	}
+
+	.position1	{left: 50%;}
+	.position2	{left: 150%;}
+	.position3	{left: 250%;}
+
+	.nav_position	{
+		width: 4em;
+		height: 1.3em;
+		margin: 0.25em;
+		font-size: 16pt;
+		font-family: arial;
+		padding: 0.5em;
+		color: rgb(150, 150, 150);
+		position: absolute;
+	}
+
+	.nav_position:hover	{
+		cursor: default;
+		background-color: rgb(150, 150, 150);
+		color: #eee;
+	}
+
+	.next_position, .submit	{right: -4.1em;}
+	.back_position			{left: 0em;}
 
 	/*PRIMARY SCREEN*/
 

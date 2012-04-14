@@ -8,6 +8,7 @@
 
 		<script type="text/javascript" src="scripts/jquery.js"></script>
 		<script type="text/javascript" src="scripts/layout.js"></script>
+		<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
 	</head>
 	<body>
 	<!--EVENT TILES-->
@@ -19,33 +20,27 @@
 	<!--SECONDARY SCREEN (MENU, CREATE and POST EVENTS)-->
 		<div class="screen" id="screen_secondary">
 			<div id="subscreen_post">
-				<h3>start game</h3><br>
-				Game Type: 
-					<input id="input_gametype">
-					<br>
-				Time: 
-					<input id="input_time">
-					<br>
-				<!--DATE-->
-					<div id="date_container">
-						Date: 
-						<input id="date"><br>
+					<div class="input_field_container">
+						<div class="input_field position1">
+							<input id="input_gametype" placeholder="Type of game..."><br>
+							<input id="input_players" placeholder="# of Players..."><br>
+							<div class="nav_position next_position">next</div>
+						</div>
+						<div class="input_field position2">
+							<input id="input_time" placeholder="Time..."><br>
+							<input id="input_address" placeholder="Location..."><br>
+							<div class="nav_position next_position">next</div>
+							<div class="nav_position back_position">back</div>
+						</div>
+						<div class="input_field position3">
+							<input id="input_attitude" placeholder="Attitude (e.g. competitive)"><br>
+							<textarea id="input_notes" placeholder="Notes..."></textarea>
+							<div class="nav_position submit">post</div>
+							<div class="nav_position back_position">back</div>
+						</div>
 					</div>
-				Address:
-					<input id="input_address">
-					<br>
-				Players
-					<input id="input_players">
-					<br>
-				Attitude:
-					<input id="input_attitude">
-					<br>
-				Notes:
-					<br>
-					<textarea id="input_notes">
-					</textarea>
-					<br>
-				<button class="submit" id="submit_new_game">submit</button>
+
+				<!--<button class="submit" id="submit_new_game">submit</button>-->
 			</div>
 			<div id="subscreen_find">
 				<h3>find game</h3><br>
