@@ -43,8 +43,13 @@
 		color: rgb(100, 100, 100);
 	}
 
+	.menu_bar p {
+		padding: 0.45em;
+	}
+
 	.menu_bar p:hover {
-		text-decoration: underline;
+		background-color: rgb(150, 150, 150);
+		color: #fff;
 		cursor: default;
 	}
 
@@ -86,7 +91,7 @@
 	.position2	{left: 150%;}
 	.position3	{left: 250%;}
 
-	.nav_position	{
+	.navigate_positions	{
 		width: 4em;
 		height: 1.3em;
 		margin: 0.25em;
@@ -97,7 +102,7 @@
 		position: absolute;
 	}
 
-	.nav_position:hover	{
+	.navigate_positions:hover	{
 		cursor: default;
 		background-color: rgb(150, 150, 150);
 		color: #eee;

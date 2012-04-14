@@ -25,9 +25,11 @@ function toggleScreen(){
 	});
 
 	$("#back, .submit").click(function(){
+		
 		$("#back").fadeOut("fast", function(){
 			$("#menu_options").fadeIn("fast");
 		});
+
 		$(".screen").animate({"top": "-=100%"}, 300, function(){
 			$(".position1").css("left", "50%")
 			$(".position2").css("left", "150%")
