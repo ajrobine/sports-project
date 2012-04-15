@@ -45,10 +45,11 @@
 
 	.menu_bar p {
 		padding: 0.45em;
+		margin-left: -0.45em;
 	}
 
 	.menu_bar p:hover {
-		background-color: rgb(150, 150, 150);
+		background-color: rgb(19, 162, 204);
 		color: #fff;
 		cursor: default;
 	}
@@ -62,7 +63,7 @@
 		position: absolute;
 		top: 0;
 		text-align: center;
-		background-color: #eee;
+		background-color: #fff;
 	}
 
 	#screen_primary		{width: 500%;	top: 0%;}
@@ -71,14 +72,6 @@
 	#subscreen_post, 
 	#subscreen_find, 
 	#subscreen_menu	{display: none;}
-
-	.input_field_container	{
-		height: 7em;
-		width: 100%;
-		position: absolute;
-		top: 50%;
-		margin-top: -3.5em;
-	}
 
 	.input_field	{
 		height: 100%;
@@ -90,40 +83,58 @@
 	.position1	{left: 50%;}
 	.position2	{left: 150%;}
 	.position3	{left: 250%;}
+	.position4	{left: 350%;}
 
-	.navigate_positions	{
-		width: 4em;
+	.i_f_container	{
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		background-color: #abc;
+	}
+
+	.i_f_container_2	{margin-top: -3.5em;}
+	.i_f_container_3	{margin-top: -3em;}
+	.i_f_container_4	{margin-top:;}
+
+	.btn	{
 		height: 1.3em;
 		margin: 0.25em;
 		font-size: 16pt;
 		font-family: arial;
-		padding: 0.5em;
+		padding-top: 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		padding-bottom: 0.4em;
 		color: rgb(150, 150, 150);
+	}
+	.btn:hover	{
+		color: #eee; 
+		cursor: default;
+		background-color: rgb(19, 162, 204);
+	}
+	.btn_little	{
+		width: 4em; 
 		position: absolute;
 	}
-
-	.navigate_positions:hover	{
-		cursor: default;
-		background-color: rgb(150, 150, 150);
-		color: #eee;
+	.btn_big	{
+		width: 15em;
 	}
 
 	.next_position, .submit	{right: -4.1em;}
 	.back_position			{left: 0em;}
 
 	/*PRIMARY SCREEN*/
-
 		.event_container	{
 			width: 100%;
 			position: absolute;
 			top: 50%;
 			margin-top: -0.5em;
-			background-color: #abc;
+			background-color: rgb(255, 207, 72);
 			text-align: left;
 		}
-
 	/*POST SCREEN*/
 	/*FIND SCREEN*/
+		.option	{display: none;}
 	/*MENU SCREEN*/
 
 /*EVENT BLOCKS*/

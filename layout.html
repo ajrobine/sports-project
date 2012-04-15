@@ -19,42 +19,75 @@
 		</div>
 	<!--SECONDARY SCREEN (MENU, CREATE and POST EVENTS)-->
 		<div class="screen" id="screen_secondary">
+
 			<div id="subscreen_post">
-					<div class="input_field_container">
-						<div class="input_field position1">
-							<input id="input_gametype" placeholder="Type of game..."><br>
-							<input id="input_players" placeholder="# of Players..."><br>
-							<div class="navigate_positions next_position">next</div>
+				<div class="i_f_container i_f_container_2">
+					<div class="input_field position1">
+						<input id="input_gametype" placeholder="Type of game..."><br>
+						<input id="input_players" placeholder="# of Players..."><br>
+						<div class="btn btn_little next_position">next</div>
+					</div>
+					<div class="input_field position2">
+						<input id="input_time" placeholder="Time..."><br>
+						<input id="input_address" placeholder="Location..."><br>
+						<div class="btn btn_little next_position">next</div>
+						<div class="btn btn_little back_position">back</div>
+					</div>
+					<div class="input_field position3">
+						<input id="input_attitude" placeholder="Attitude (e.g. competitive)"><br>
+						<textarea id="input_notes" placeholder="Notes..."></textarea>
+						<div class="btn btn_little submit">post</div>
+						<div class="btn btn_little back_position">back</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="subscreen_find">
+				<div class="i_f_container i_f_container_3">
+					<div class="input_field position1">
+						<div id="findby_location_btn" class="btn btn_big next_position">by location</div>
+						<div id="findby_gametype_btn" class="btn btn_big next_position">by game type</div>
+						<div id="findby_players_btn" class="btn btn_big next_position">by players</div>
+					</div>
+					<div class="input_field position2">
+						<div id="findby_location" class="option">
+							by location
 						</div>
-						<div class="input_field position2">
-							<input id="input_time" placeholder="Time..."><br>
-							<input id="input_address" placeholder="Location..."><br>
-							<div class="navigate_positions next_position">next</div>
-							<div class="navigate_positions back_position">back</div>
+						<div id="findby_gametype" class="option">
+							by gametype
 						</div>
-						<div class="input_field position3">
-							<input id="input_attitude" placeholder="Attitude (e.g. competitive)"><br>
-							<textarea id="input_notes" placeholder="Notes..."></textarea>
-							<div class="navigate_positions submit">post</div>
-							<div class="navigate_positions back_position">back</div>
+						<div id="findby_players" class="option">
+							by players
 						</div>
 					</div>
-
-				<!--<button class="submit" id="submit_new_game">submit</button>-->
+				</div>
 			</div>
-			<div id="subscreen_find">
-				<h3>find game</h3><br>
 
-			</div>
 			<div id="subscreen_menu">
-				<h3>menu</h3><br>
-
+				<div class="i_f_container i_f_container_3">
+					<div class="input_field position1">
+						<div id="settings_btn" class="btn btn_big next_position">settings</div>
+						<div id="about_btn" class="btn btn_big next_position">about us</div>
+						<div id="contact_btn" class="btn btn_big next_position">contact us</div>
+					</div>
+					<div class="input_field position2">
+						<div id="settings_screen" class="option">
+							settings
+						</div>
+						<div id="about_screen" class="option">
+							about
+						</div>
+						<div id="contact_screen" class="option">
+							contact
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	<!--NAVIGATION-->
 		<div class="menu_bar_container">
 			<div class="menu_bar">
-				<h1>pikup</h1>
+				<h1>title</h1>
 				<div id="menu_options">
 					<p id="post_event">post game</p>
 					<p id="find_event">find game</p>

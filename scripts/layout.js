@@ -41,6 +41,21 @@ function toggleScreen(){
 };
 
 function navInputFields(){
+	function showOption(btn, option){
+		btn.click(function(){
+			$(".option").hide();
+			option.show();
+		});
+	}
+
+	showOption($("#findby_location_btn"), $("#findby_location"));
+	showOption($("#findby_gametype_btn"), $("#findby_gametype"));
+	showOption($("#findby_players_btn"), $("#findby_players"));
+
+	showOption($("#settings_btn"), $("#settings_screen"));
+	showOption($("#about_btn"), $("#about_screen"));
+	showOption($("#contact_btn"), $("#contact_screen"));
+
 	$(".next_position").click(function(){
 		$(".input_field").animate({"left": "-=100%"});
 	});
