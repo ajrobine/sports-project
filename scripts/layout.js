@@ -4,9 +4,9 @@ function scrollHorizontal(){
 						    if (document.body.doScroll)
 						        document.body.doScroll(event.wheelDelta>0?"left":"right");
 						    else if ((event.wheelDelta || event.detail) > 0)
-						        document.body.scrollLeft -= 15;
+						        document.body.scrollLeft -= 25;
 						    else
-						        document.body.scrollLeft += 15;
+						        document.body.scrollLeft += 25;
 
 						    return false;
 						}
