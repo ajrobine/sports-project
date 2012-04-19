@@ -8,13 +8,60 @@
 
 		<script type="text/javascript" src="scripts/jquery.js"></script>
 		<script type="text/javascript" src="scripts/layout.js"></script>
-		<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
 	</head>
 	<body>
 	<!--EVENT TILES-->
 		<div class="screen" id="screen_primary">
 			<div class="event_container">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero magna, pulvinar sit amet commodo nec, consectetur vitae elit. Proin iaculis purus at neque iaculis porttitor. Suspendisse quam ligula, porta ut condimentum non, consectetur a lectus. Aenean eu arcu quam. Curabitur nec justo lorem, id aliquet diam. Cras nunc diam, convallis id venenatis at, tristique ut dolor. Curabitur ac tincidunt dolor. Aliquam volutpat molestie ligula, quis rhoncus elit convallis sit amet.
+
+				<div class="event green">
+					<div class="event_inside event_top">
+						<img src="circle.png">
+					</div>
+					<div class="event_inside event_bottom">
+						<p>2:30pm</p>
+						<p>soccer</p>
+						<p>The Quad</p>
+						<p class="join">join</p>
+					</div>
+				</div>
+
+				<div class="event yellow">
+					<div class="event_inside event_top">
+						<img src="circle.png">
+					</div>
+					<div class="event_inside event_bottom">
+						<p>2:30pm</p>
+						<p>soccer</p>
+						<p>The Quad</p>
+						<p class="join">join</p>
+					</div>
+				</div>
+
+				<div class="event blue">
+					<div class="event_inside event_top">
+						<img src="circle.png">
+					</div>
+					<div class="event_inside event_bottom">
+						<p>2:30pm</p>
+						<p>soccer</p>
+						<p>The Quad</p>
+						<p class="join">join</p>
+					</div>
+				</div>
+
+				<div class="event red">
+					<div class="event_inside event_top">
+						<img src="circle.png">
+					</div>
+					<div class="event_inside event_bottom">
+						<p>2:30pm</p>
+						<p>soccer</p>
+						<p>The Quad</p>
+						<p class="join">join</p>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	<!--SECONDARY SCREEN (MENU, CREATE and POST EVENTS)-->
@@ -30,12 +77,6 @@
 					<div class="input_field position2">
 						<input id="input_time" placeholder="Time..."><br>
 						<input id="input_address" placeholder="Location..."><br>
-						<div class="btn btn_little next_position">next</div>
-						<div class="btn btn_little back_position">back</div>
-					</div>
-					<div class="input_field position3">
-						<input id="input_attitude" placeholder="Attitude (e.g. competitive)"><br>
-						<textarea id="input_notes" placeholder="Notes..."></textarea>
 						<div class="btn btn_little submit">post</div>
 						<div class="btn btn_little back_position">back</div>
 					</div>
@@ -52,12 +93,15 @@
 					<div class="input_field position2">
 						<div id="findby_location" class="option">
 							by location
+							<div class="btn btn_little back_position">back</div>
 						</div>
 						<div id="findby_gametype" class="option">
 							by gametype
+							<div class="btn btn_little back_position">back</div>
 						</div>
 						<div id="findby_players" class="option">
 							by players
+							<div class="btn btn_little back_position">back</div>
 						</div>
 					</div>
 				</div>
@@ -73,12 +117,15 @@
 					<div class="input_field position2">
 						<div id="settings_screen" class="option">
 							settings
+							<div class="btn btn_little back_position">back</div>
 						</div>
 						<div id="about_screen" class="option">
 							about
+							<div class="btn btn_little back_position">back</div>
 						</div>
 						<div id="contact_screen" class="option">
 							contact
+							<div class="btn btn_little back_position">back</div>
 						</div>
 					</div>
 				</div>
